@@ -25,9 +25,27 @@
     <h1 id="title">This is a title for the Survey</h1>
     <p id="description">A short description of this survey</p>
     <form action="" id="survey-form">
-      <input type="text" id="name" required>
-      <input type="email" id="email" required>
-      <input type="number" id="number">
+      <label id="name-label">name</label>
+      <input type="text" id="name" placeholder="please enter the name" required>
+      
+      <label id="email-label">email </label>
+      <input type="email" id="email" placeholder="enter the email" required>
+   
+    <label id="number-label"> number</label>
+      <input type="number" id="number" placeholder="enter the number" min="10" max="100">
+   <select id="dropdown">
+    <option value="number1">number 1</option>
+    <option value="number2">number 2</option>
+   
+  </select>
+  <input type="radio" name="test" value="test1">
+  <input type="radio" name="test" value="test2">
+  <input type="radio" name="test" value="test3">
+
+  <input type="checkbox" name="collect" value="one">
+  <input type="checkbox" name="collect" value="two">
+  <textarea>please enter any comment</textarea>
+  <button id="submit"></button>
     </form>
   
   </body>
